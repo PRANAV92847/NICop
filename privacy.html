@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — CO BOT</title>
+  <link rel="icon" href="/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080c10; --border: rgba(255,255,255,0.07);
+      --primary: #7c3aed; --primary-light: #a78bfa;
+      --text: #f0f0f5; --muted: rgba(240,240,245,0.45);
+      --font: 'Outfit', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: var(--font); }
+    a { text-decoration: none; color: inherit; }
+    .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      border-bottom: 1px solid var(--border);
+      background: rgba(8,12,16,0.88); backdrop-filter: blur(20px);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; max-width: 800px; margin: 0 auto; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo img { width: 32px; height: 32px; object-fit: contain; }
+    .nav-logo span { font-weight: 800; font-size: 1rem; }
+    .nav-back { font-size: 0.82rem; color: var(--muted); transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+    main { padding-top: 130px; padding-bottom: 80px; }
+    .badge {
+      display: inline-flex; align-items: center;
+      border: 1px solid rgba(124,58,237,.3); background: rgba(124,58,237,.1);
+      padding: 5px 12px; border-radius: 999px;
+      font-size: 0.68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--primary-light); margin-bottom: 16px;
+    }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: 8px; }
+    .updated { font-size: 0.78rem; color: var(--muted); font-family: monospace; margin-bottom: 48px; }
+    .content { display: flex; flex-direction: column; gap: 36px; }
+    section h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; color: var(--text); }
+    section p, section li { font-size: 0.93rem; color: var(--muted); line-height: 1.75; }
+    section ul { list-style: disc; padding-left: 24px; display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+    section a { color: var(--primary-light); }
+    section a:hover { text-decoration: underline; }
+    strong { color: rgba(240,240,245,.75); }
+    footer { padding: 24px 0; border-top: 1px solid var(--border); background: #04070a; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .footer-copy { font-size: 0.75rem; color: rgba(255,255,255,.25); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,.35); transition: color .2s; }
+    .footer-links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="CO BOT" />
+      <span>CO BOT</span>
+    </a>
+    <a href="/" class="nav-back">← Back to Home</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Last updated: June 23, 2025</div>
+
+    <div class="content">
+      <section>
+        <h2>1. Introduction</h2>
+        <p>This Privacy Policy explains how CO BOT ("we", "us", "our") collects, uses, and protects information when you use our Discord bot. We are committed to protecting your privacy and being transparent about our data practices.</p>
+      </section>
+      <section>
+        <h2>2. Information We Collect</h2>
+        <p>CO BOT may collect and store the following data to provide its services:</p>
+        <ul>
+          <li><strong>Server data:</strong> Server ID, channel IDs, and role IDs for configuration purposes.</li>
+          <li><strong>User data:</strong> Discord user IDs for moderation and other features.</li>
+          <li><strong>Message content:</strong> Only when explicitly required (e.g., auto-mod scanning). Messages are not stored long-term.</li>
+          <li><strong>Moderation logs:</strong> Records of moderation actions within servers that have logging enabled.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>3. How We Use Your Data</h2>
+        <p>Collected data is used solely to:</p>
+        <ul>
+          <li>Provide and improve CO BOT's features and functionality.</li>
+          <li>Enforce server rules and moderation settings configured by administrators.</li>
+          <li>Maintain persistent features such as tickets and logging.</li>
+          <li>Diagnose and fix technical issues.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>4. Data Sharing</h2>
+        <p>We do not sell, trade, or share your data with third parties. Data is only accessible to the bot's developer (NI - CO) for maintenance and debugging purposes.</p>
+      </section>
+      <section>
+        <h2>5. Data Retention</h2>
+        <p>Data is retained for as long as CO BOT is present in your server. When CO BOT is removed from a server, server-specific data is deleted within 30 days. You may request immediate deletion by contacting us on our support server.</p>
+      </section>
+      <section>
+        <h2>6. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Request access to data stored about you.</li>
+          <li>Request deletion of your personal data.</li>
+          <li>Opt out of non-essential data collection.</li>
+        </ul>
+        <p style="margin-top:8px">To exercise these rights, contact us on our <a href="https://discord.gg/pFhTJS9bUv" target="_blank" rel="noreferrer">Support Server</a>.</p>
+      </section>
+      <section>
+        <h2>7. Security</h2>
+        <p>We take reasonable precautions to protect stored data. However, no system is 100% secure and we cannot guarantee absolute security of your information.</p>
+      </section>
+      <section>
+        <h2>8. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Continued use of CO BOT after changes constitutes acceptance of the updated policy.</p>
+      </section>
+      <section>
+        <h2>9. Contact</h2>
+        <p>For privacy-related questions, join our <a href="https://discord.gg/pFhTJS9bUv" target="_blank" rel="noreferrer">Support Server</a> and contact NI - CO directly.</p>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-copy">&copy; 2025 CO BOT</div>
+    <div class="footer-links">
+      <a href="/privacy.html" style="color:rgba(255,255,255,.6)">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
